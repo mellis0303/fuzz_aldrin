@@ -1,0 +1,483 @@
+# =============================================================================
+# Go
+# =============================================================================
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (if you're not committing vendor)
+vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Build outputs
+/bin/
+/out/
+/cache/
+/broadcast/
+/artifacts/
+/build/
+*.bin
+
+# =============================================================================
+# Solidity & Blockchain
+# =============================================================================
+# Hardhat
+node_modules/
+cache/
+artifacts/
+typechain/
+typechain-types/
+
+# Foundry
+/lib/
+/cache/
+/out/
+broadcast/
+.env
+
+# Truffle
+build/
+contracts/build/
+
+# Remix
+.deps/
+
+# Coverage reports
+coverage/
+coverage.json
+*.lcov
+
+# Gas reports
+.gas-snapshot
+gas-report.txt
+
+# =============================================================================
+# Security & Secrets
+# =============================================================================
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+
+# Private keys and keystores (be extra careful with these)
+*.pem
+*.key
+*.p12
+*.pfx
+# Uncomment the line below if you don't want to commit keystores
+# keystores/
+# *.keystore.json
+
+# Mnemonic phrases
+mnemonic.txt
+seed.txt
+
+# =============================================================================
+# Operating System
+# =============================================================================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# Editors & IDEs
+# =============================================================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Vim
+*.swp
+*.swo
+*~
+tags
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# =============================================================================
+# Development Tools
+# =============================================================================
+# Testing
+coverage.txt
+coverage.out
+coverage.html
+*.cover
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+.nyc_output
+
+# Linting
+.eslintcache
+
+# Logs
+*.log
+logs/
+*.txt
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary folders
+tmp/
+temp/
+.tmp/
+.temp/
+
+# =============================================================================
+# Project Specific
+# =============================================================================
+# DevKit
+devkit
+.devkit/
+.hourglass/
+
+# Release outputs
+temp_external/
+
+# DevKit context configurations (only devnet.yaml is indexed)
+config/contexts/**/*
+!config/contexts/devnet.yaml
+
+# Local configuration files
+config.local.yaml
+*.local.yaml
+*.local.yml
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# =============================================================================
+# Documentation
+# =============================================================================
+# Generated documentation
+docs/build/
+site/
+
+# =============================================================================
+# CI/CD
+# =============================================================================
+.github/workflows/secrets/
+
+# =============================================================================
+# Miscellaneous
+# =============================================================================
+# Ignore all files without extensions in root (likely binaries)
+/*
+!*/
+!*.*
+!/Makefile
+!/Dockerfile
+!/LICENSE
+!/README*
+!/CHANGELOG*
+!/CONTRIBUTING*
+!/CODEOWNERS
+
+# But allow specific files we want to track
+!*.go
+!*.sol
+!*.yaml
+!*.yml
+!*.json
+!*.md
+!*.txt
+!*.toml
+
+# Deployment and request files
+deployment-info.json
+deployment-sepolia.json
+last-audit-request.json
+last_request_id.txt
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Go dependencies and build
+vendor/
+go.sum
+
+# Node modules (if any)
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Forge/Foundry
+cache_forge/
+
+# Test coverage
+coverage/
+coverage.json
+lcov.info
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Contract flattened files
+*.flat.sol
+
+# Keys and secrets (NEVER commit these!)
+*.key
+*.pem
+secrets/
+
+# Operating system files
+Thumbs.db
+.Trashes
+
+# Python cache (if any scripts use Python)
+__pycache__/
+*.pyc
+out/VulnerableExample.sol/VulnerableExample.json
+out/Vm.sol/VmSafe.json
+out/Vm.sol/Vm.json
+out/TaskMailbox.sol/TaskMailbox.json
+out/TaskAVSRegistrarBaseStorage.sol/TaskAVSRegistrarBaseStorage.json
+out/TaskAVSRegistrarBase.sol/TaskAVSRegistrarBase.json
+out/TaskAVSRegistrar.sol/TaskAVSRegistrar.json
+out/Strings.sol/Strings.json
+out/StdUtils.sol/StdUtils.json
+out/StdStyle.sol/StdStyle.json
+out/StdStorage.sol/stdStorageSafe.json
+out/StdStorage.sol/stdStorage.json
+out/StdMath.sol/stdMath.json
+out/StdJson.sol/stdJson.json
+out/StdConstants.sol/StdConstants.json
+out/StdCheats.sol/StdCheatsSafe.json
+out/StdCheats.sol/StdCheats.json
+out/StdChains.sol/StdChains.json
+out/SocketRegistryStorage.sol/SocketRegistryStorage.json
+out/SocketRegistry.sol/SocketRegistry.json
+out/SlashingLib.sol/SlashingLib.json
+out/SimpleContractAuditDemo.sol/SimpleContractAuditDemo.json
+out/SimpleContractAudit.sol/SimpleContractAudit.json
+out/SignedMath.sol/SignedMath.json
+out/SetupAVSTaskMailboxConfig.s.sol/SetupAVSTaskMailboxConfig.json
+out/Script.sol/Script.json
+out/safeconsole.sol/safeconsole.json
+out/SafeCastUpgradeable.sol/SafeCastUpgradeable.json
+out/OperatorSetLib.sol/OperatorSetLib.json
+out/Math.sol/Math.json
+out/libraries/OperatorSetLib.sol/OperatorSetLib.json
+out/l2/IAVSTaskHook.sol/IAVSTaskHook.json
+out/l2-contracts/AVSTaskHook.sol/AVSTaskHook.json
+out/l1-contracts/TaskAVSRegistrar.sol/TaskAVSRegistrar.json
+out/ITaskMailbox.sol/ITaskMailboxTypes.json
+out/ITaskMailbox.sol/ITaskMailboxEvents.json
+out/ITaskMailbox.sol/ITaskMailboxErrors.json
+out/ITaskMailbox.sol/ITaskMailbox.json
+out/IStrategy.sol/IStrategyEvents.json
+out/IStrategy.sol/IStrategyErrors.json
+out/IStrategy.sol/IStrategy.json
+out/ISocketRegistryV2.sol/ISocketRegistryEvents.json
+out/ISocketRegistryV2.sol/ISocketRegistryErrors.json
+out/ISocketRegistryV2.sol/ISocketRegistry.json
+out/ISemVerMixin.sol/ISemVerMixin.json
+out/IPauserRegistry.sol/IPauserRegistry.json
+out/IOperatorTableCalculator.sol/IOperatorTableCalculator.json
+out/interfaces/ISemVerMixin.sol/ISemVerMixin.json
+out/interfaces/IKeyRegistrar.sol/IKeyRegistrarTypes.json
+out/interfaces/IKeyRegistrar.sol/IKeyRegistrar.json
+out/Initializable.sol/Initializable.json
+out/IMulticall3.sol/IMulticall3.json
+out/IKeyRegistrar.sol/IKeyRegistrarTypes.json
+out/IKeyRegistrar.sol/IKeyRegistrarEvents.json
+out/IKeyRegistrar.sol/IKeyRegistrarErrors.json
+out/IKeyRegistrar.sol/IKeyRegistrar.json
+out/IERC20.sol/IERC20.json
+out/IERC165.sol/IERC165.json
+out/IECDSATableCalculator.sol/IECDSATableCalculatorTypes.json
+out/IECDSATableCalculator.sol/IECDSATableCalculatorEvents.json
+out/IECDSATableCalculator.sol/IECDSATableCalculatorErrors.json
+out/IECDSATableCalculator.sol/IECDSATableCalculator.json
+out/IECDSACertificateVerifier.sol/IECDSACertificateVerifierTypes.json
+out/IECDSACertificateVerifier.sol/IECDSACertificateVerifierEvents.json
+out/IECDSACertificateVerifier.sol/IECDSACertificateVerifier.json
+out/ICrossChainRegistry.sol/ICrossChainRegistryTypes.json
+out/ICrossChainRegistry.sol/ICrossChainRegistryEvents.json
+out/ICrossChainRegistry.sol/ICrossChainRegistryErrors.json
+out/ICrossChainRegistry.sol/ICrossChainRegistry.json
+out/IBN254TableCalculator.sol/IBN254TableCalculatorTypes.json
+out/IBN254TableCalculator.sol/IBN254TableCalculatorEvents.json
+out/IBN254TableCalculator.sol/IBN254TableCalculatorErrors.json
+out/IBN254TableCalculator.sol/IBN254TableCalculator.json
+out/IBN254CertificateVerifier.sol/IBN254CertificateVerifierTypes.json
+out/IBN254CertificateVerifier.sol/IBN254CertificateVerifierEvents.json
+out/IBN254CertificateVerifier.sol/IBN254CertificateVerifierErrors.json
+out/IBN254CertificateVerifier.sol/IBN254CertificateVerifier.json
+out/IBaseCertificateVerifier.sol/IBaseCertificateVerifierEvents.json
+out/IBaseCertificateVerifier.sol/IBaseCertificateVerifierErrors.json
+out/IBaseCertificateVerifier.sol/IBaseCertificateVerifier.json
+out/IAVSTaskHook.sol/IAVSTaskHook.json
+out/IAVSRegistrarInternal.sol/IAVSRegistrarInternal.json
+out/IAVSRegistrarInternal.sol/IAVSRegistrarEvents.json
+out/IAVSRegistrarInternal.sol/IAVSRegistrarErrors.json
+out/IAVSRegistrar.sol/IAVSRegistrar.json
+out/IAllocationManager.sol/IAllocationManagerTypes.json
+out/IAllocationManager.sol/IAllocationManagerEvents.json
+out/IAllocationManager.sol/IAllocationManagerErrors.json
+out/IAllocationManager.sol/IAllocationManager.json
+out/IAccessControl.sol/IAccessControl.json
+out/ERC165.sol/ERC165.json
+out/DeployMyContracts.s.sol/DeployMyContracts.json
+out/DeployAVS.s.sol/TaskResponse.json
+out/DeployAVS.s.sol/TaskMailbox.json
+out/DeployAVS.s.sol/DeployAVS.json
+out/DeployAVS.s.sol/AVSRegistry.json
+out/core/ITaskMailbox.sol/ITaskMailboxTypes.json
+out/core/ITaskMailbox.sol/ITaskMailboxEvents.json
+out/core/ITaskMailbox.sol/ITaskMailboxErrors.json
+out/core/ITaskMailbox.sol/ITaskMailbox.json
+out/ContractAudit.sol/ContractAudit.json
+out/Context.sol/Context.json
+out/console.sol/console.json
+out/build-info/8a399ed36118d39b.json
+out/build-info/6622393dd7530705.json
+out/build-info/40ca7dd7f58dedc1.json
+out/build-info/3510d6b92b1ca32b.json
+out/build-info/2e4414f7088900d6.json
+out/build-info/2bf9ba149bfb934f.json
+out/build-info/23887bf89c307918.json
+out/BN254.sol/BN254.json
+out/Base.sol/TestBase.json
+out/Base.sol/ScriptBase.json
+out/Base.sol/CommonBase.json
+out/AVSTaskHook.sol/ITaskMailbox.json
+out/AVSTaskHook.sol/AVSTaskHook.json
+out/AVSRegistrarWithSocket.sol/AVSRegistrarWithSocket.json
+out/AVSRegistrarStorage.sol/AVSRegistrarStorage.json
+out/AVSRegistrar.sol/AVSRegistrar.json
+out/AddressUpgradeable.sol/AddressUpgradeable.json
+out/AccessControl.sol/AccessControl.json
